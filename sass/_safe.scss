@@ -1,0 +1,88 @@
+.safe {
+    @media screen and (max-width: $mobile768) {
+        padding-bottom: 30px;
+        }
+}
+
+.safe-wrapper{
+    position: relative;
+    display: flex;
+    min-height: 700px;
+}
+
+.safe-figure1, .safe-figure2, .safe-figure3{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: $color_accent;
+}
+
+.safe-figure1 {
+    max-width: 147px;
+    min-height: 147px;
+    left: 48px;
+    top: 78px;
+    border-radius: 30px;
+    @media screen and (max-width: $mobile768) {
+        left: 25%;
+        }
+}
+
+.safe-figure2 {
+    max-width: 77px;
+    min-height: 77px;
+    left: 309px;
+    top: 436px;
+    border-radius: 30px;
+    @media screen and (max-width: $mobile768) {
+        left: 60%;
+        }
+}
+
+.safe-figure3 {
+    max-width: 77px;
+    min-height: 77px;
+    left: 80px;
+    top: 543px;
+    border-radius: 30px;
+    @media screen and (max-width: $mobile768) {
+        left: 30%;
+        }
+}
+
+.safe-img {
+    position: absolute;
+    width: 100%;
+    max-width: 295px;
+    min-height: 525px;
+    left: 88px;
+    top: 105px;
+    z-index: 1;
+    @media screen and (max-width: $mobile768) {
+        left: 30%;
+        }
+}
+
+.safe-content {
+    @media screen and (max-width: $mobile768) {
+        display: block;
+        text-align: center;
+        margin: 650px auto 0px auto;
+        }
+    @media screen and (min-width: $desktop1152) {
+        margin: 231px 0px 0px 535px;
+        }
+}
+
+.safe-title {
+    margin: 0px 0px 11px 0px
+}
+
+.safe-accent{
+    color: $color_accent ;
+}
+
+.safe-subtitle{
+    margin: 0px 0px 28px 0px 
+}
+

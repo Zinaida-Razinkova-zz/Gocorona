@@ -1,0 +1,143 @@
+.advantage-wrapper{
+    position: relative;
+    padding: 80px 0px 0px 0px;
+    min-height: 569px;
+}
+
+.advantage-figure1, .advantage-figure2, .advantage-figure3, .advantage-figure4{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: $color_accent;
+}
+
+.advantage-figure1 {
+    max-width: 65.75px;
+    min-height: 65.75px;
+    left: 17px;
+    top: 490px;
+    border-radius: 16px;
+    transform: rotate(-30deg);
+    @media screen and (max-width: $mobile768) {
+        display: none;
+        }
+}
+
+.advantage-figure2 {
+    max-width: 96.96px;
+    min-height: 96.96px;
+    left: 267px;
+    top: 288px;
+    border-radius: 30px;
+    transform: rotate(105deg);
+    @media screen and (max-width: $mobile768) {
+        display: none;
+        }
+}
+
+.advantage-figure3 {
+    max-width: 127.47px;
+    min-height: 127.47px;
+    left: 615px;
+    top: 418px;
+    border-radius: 30px;
+    transform: rotate(-30deg);
+    @media screen and (max-width: $mobile768) {
+        display: none;
+        }
+}
+
+.advantage-figure4 {
+    max-width: 65.75px;
+    min-height: 65.75px;
+    left: 968px;
+    top: 212px;
+    border-radius: 16px;
+    transform: rotate(-30deg);
+    @media screen and (max-width: $mobile768) {
+        display: none;
+        }
+}
+
+.advantage-title, .advantage-subtitle{
+    text-align: center;
+}
+.advantage-subtitle{
+    @media screen and (max-width: $mobile768) {
+        margin: 0px 0px 30px 0px;
+        }
+}
+
+.advantage-title {
+    margin-bottom: 15px;
+}
+
+.advantage-title__accent{
+    color: $color_accent;
+}
+
+
+.advantage-row {
+    @media screen and (min-width: $desktop1152) {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 34px; 
+    margin-top: 64px;
+    }
+}
+
+.advantage-column {
+    width: 278.17px;
+    height: 276.52px;
+    background: $color_white;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 8px;
+    @media screen and (max-width: $mobile768) {
+            padding: 40px;
+            margin-bottom: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+   
+        
+    @media screen and (min-width: $desktop1152) {
+        margin-right: 73px;
+        }
+}
+
+.advantage-paragraf, .advantage-subparagraf{
+    font-family: Rubik;
+    font-style: normal;
+    line-height: 1.385;
+    letter-spacing: 0.08em;
+    text-align: center;
+    
+}
+
+.advantage-paragraf{
+    font-size: 16px;
+    font-weight: bold;
+    color: $color_black;
+    margin: 0px 0px 7px 0px;
+    @media screen and (max-width: $mobile768) {
+        margin: 30px 0px 15px 0px;
+        }
+    
+}
+
+.advantage-subparagraf{
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: $color_average;
+    margin: 0px 0px 0px 0px;
+}
+
+.advantage-img {
+    margin: 0px auto 0px auto;
+    @media screen and (min-width: $desktop1152) {
+        margin: 37px auto 58px auto;
+        }
+}

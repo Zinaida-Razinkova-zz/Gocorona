@@ -1,0 +1,135 @@
+.talk {
+    background: $color_light;
+}
+
+.talk-block{
+    position: relative;
+    min-height: 700px;
+}
+
+.talk-figure1, .talk-figure2, .talk-figure3{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: $color_accent;
+}
+
+.talk-figure1 {
+    max-width: 65.75px;
+    min-height: 65.75px;
+    left: 178px;
+    top: 174px;
+    border-radius: 16px;
+    transform: rotate(-30deg);
+    @media screen and (max-width: $mobile768) {
+        left: 7px;
+        }
+
+}
+.talk-figure2 {
+   max-width: 96.96px;
+   min-height: 96.96px;
+   left: 416px;
+   top: 62px;
+   border-radius: 30px;
+   transform: rotate(105deg);
+   @media screen and (max-width: $mobile768) {
+    left: 243px;
+    }
+}
+
+.talk-figure3 {
+   max-width: 127.47px;
+   min-height: 127.47px;
+   left: 776px;
+   top: 102px;
+   border-radius: 30px;
+   transform: rotate(-30deg);
+   @media screen and (max-width: $mobile768) {
+    left: 577px;
+    }
+}
+
+.talk-row {
+    position: absolute;
+    width: 100%;
+    max-width: 654px;
+    min-height: 117px;
+    left: 197px;
+    top: 102px;
+    z-index: 1;
+    background: $color_white;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @media screen and (max-width: $mobile768) {
+        left: 49px;
+        }
+}
+.talk-column {
+    text-align: center;
+}
+
+.talk-column__paragraf, .talk-column__subparagraf{
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.talk-column__paragraf {
+    font-size: 36px;
+    line-height: 1.194;
+    letter-spacing: 0.14em;
+    color: $color_accent;
+
+    margin: 0px 0px 8px 0px;
+}
+
+.talk-column__subparagraf {
+    font-size: 11px;
+    line-height: 1.18px;
+    letter-spacing: 0.37em;
+    text-transform: uppercase;
+    color: $color_black;
+
+    margin: 0px;
+}
+
+.talk-wrapper {
+    padding-top: 285px;
+    @media screen and (max-width: $mobile768) {
+        text-align: center;
+        }
+    @media screen and (min-width: $desktop1152) {
+        display: flex;
+        }
+}
+.talk-content {
+    @media screen and (min-width: $desktop1152) {
+        margin: 66px 0px 0px 39px;
+        }
+    
+}
+.talk-title {
+    margin-bottom: 11px;
+}
+
+.talk-title__accent{
+    color: $color_accent2;
+}
+
+.talk-subtitle {
+    margin-bottom: 26px;
+    
+}
+
+.talk-video {
+    width: 100%;
+    max-width: 560px;
+    @media screen and (min-width: $desktop1152) {
+        margin-left: 87px;
+        }
+}

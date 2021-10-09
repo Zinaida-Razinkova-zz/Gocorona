@@ -1,0 +1,16 @@
+.footer {
+    min-height: 131px;
+
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-img {
+    margin-top: 23px;
+    &:not(:last-child){
+        margin-right: 56px;
+        margin-left: 9px;
+    }
+}
