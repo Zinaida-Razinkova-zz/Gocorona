@@ -38,8 +38,7 @@
 }
 
 .header-logo__img {
-    width: 40px;
-    height: 40px;
+    width: 140px;
 }
 
 .header-logo__accent{
@@ -54,7 +53,7 @@
     padding: 0px;
 
     @media screen and (min-width: $desktop1152) {
-    margin-left: 288px;
+    margin-left: 282px;
     }
       .header-menu__item {
        &:not(:last-child){
@@ -62,7 +61,7 @@
         }
 
         @media screen and (max-width: $mobile768) {
-            margin-left: 70px;
+            margin-left: 55px;
 
             .header-menu__item {
                 &:not(:last-child){

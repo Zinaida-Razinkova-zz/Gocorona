@@ -93,6 +93,12 @@ img {
   margin: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
 .subtitle {
   font-family: Rubik;
   font-style: normal;
@@ -157,8 +163,7 @@ img {
 }
 
 .header-logo__img {
-  width: 40px;
-  height: 40px;
+  width: 140px;
 }
 
 .header-logo__accent {
@@ -178,7 +183,7 @@ img {
 
 @media screen and (min-width: 1152px) {
   .header-menu {
-    margin-left: 288px;
+    margin-left: 282px;
   }
 }
 
@@ -188,7 +193,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .header-menu {
-    margin-left: 70px;
+    margin-left: 55px;
   }
   .header-menu .header-menu__item:not(:last-child) {
     margin-right: 30px;
@@ -277,10 +282,12 @@ img {
 }
 
 .hero-title {
+  max-width: 497px;
   margin: 0px 0px 10px 0px;
 }
 
 .hero-subtitle {
+  max-width: 375px;
   margin: 0px 0px 27px 0px;
 }
 
@@ -460,6 +467,7 @@ img {
 }
 
 .safe-title {
+  max-width: 379px;
   margin: 0px 0px 11px 0px;
 }
 
@@ -468,6 +476,7 @@ img {
 }
 
 .safe-subtitle {
+  max-width: 363px;
   margin: 0px 0px 28px 0px;
 }
 
@@ -616,7 +625,8 @@ img {
 }
 
 .talk-title {
-  margin-bottom: 11px;
+  max-width: 393px;
+  margin: 0px auto 11px auto;
 }
 
 .talk-title__accent {
@@ -624,7 +634,8 @@ img {
 }
 
 .talk-subtitle {
-  margin-bottom: 26px;
+  max-width: 363px;
+  margin: 0px auto 26px auto;
 }
 
 .talk-video {
@@ -719,9 +730,14 @@ img {
   text-align: center;
 }
 
+.advantage-subtitle {
+  max-width: 600.9px;
+  margin: 0px auto;
+}
+
 @media screen and (max-width: 768px) {
   .advantage-subtitle {
-    margin: 0px 0px 30px 0px;
+    margin: 0px auto 30px auto;
   }
 }
 
@@ -792,11 +808,16 @@ img {
 }
 
 .advantage-subparagraf {
+  max-width: 227.27px;
+  margin: 0 auto;
   font-weight: normal;
   font-size: 12px;
   letter-spacing: 0.08em;
   color: #616161;
-  margin: 0px 0px 0px 0px;
+}
+
+.advantage-subparagraf--width {
+  max-width: 242.53px;
 }
 
 .advantage-img {

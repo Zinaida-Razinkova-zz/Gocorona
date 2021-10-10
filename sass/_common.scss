@@ -78,6 +78,9 @@ line-height: 1.26;
 color: $color_black;
 
 margin: 0px;
+@media screen and (max-width: $mobile768) {
+  font-size: 36px;
+  }
 }
 
 .subtitle{
