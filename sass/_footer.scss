@@ -1,5 +1,8 @@
 .footer {
-    min-height: 131px;
+    @media screen and (max-width: $mobile768) {
+        padding: 25px 0px 40px 0px;
+        }
+        padding: 75px 0px 47px 0px;
 
 }
 .footer-wrapper{
@@ -8,7 +11,10 @@
     justify-content: center;
 }
 .footer-img {
-    margin-top: 23px;
+    @media screen and (max-width: $mobile768) {
+        margin-top: 0px;
+        }
+    margin-top: 335px;
     &:not(:last-child){
         margin-right: 56px;
         margin-left: 9px;

@@ -1,4 +1,5 @@
 .safe {
+    padding: 0px 0px 0px 0px;
     @media screen and (max-width: $mobile768) {
         padding-bottom: 30px;
         }
@@ -7,7 +8,7 @@
 .safe-wrapper{
     position: relative;
     display: flex;
-    min-height: 700px;
+    height: auto;
 }
 
 .safe-figure1, .safe-figure2, .safe-figure3{
@@ -70,7 +71,7 @@
         margin: 650px auto 0px auto;
         }
     @media screen and (min-width: $desktop1152) {
-        margin: 231px 0px 0px 535px;
+        margin: 231px 0px 231px 535px;
         }
 }
 

@@ -1,10 +1,11 @@
 .talk {
     background: $color_light;
+    padding: 0px 0px 93px 0px;
 }
 
 .talk-block{
     position: relative;
-    min-height: 700px;
+    height: auto;
 }
 
 .talk-figure1, .talk-figure2, .talk-figure3{

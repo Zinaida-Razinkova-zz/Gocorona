@@ -1,13 +1,4 @@
-::-webkit-backdrop
-::after {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-::backdrop
+::before
 ::after {
   margin: 0px;
   padding: 0px;
@@ -33,7 +24,6 @@ body {
 
 body .container {
   margin: 0px auto;
-  width: 100%;
   max-width: 1152px;
   padding: 0px 52px 0 52px;
 }
@@ -373,6 +363,10 @@ img {
   }
 }
 
+.safe {
+  padding: 0px 0px 0px 0px;
+}
+
 @media screen and (max-width: 768px) {
   .safe {
     padding-bottom: 30px;
@@ -384,7 +378,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 700px;
+  height: auto;
 }
 
 .safe-figure1, .safe-figure2, .safe-figure3 {
@@ -462,7 +456,7 @@ img {
 
 @media screen and (min-width: 1152px) {
   .safe-content {
-    margin: 231px 0px 0px 535px;
+    margin: 231px 0px 231px 535px;
   }
 }
 
@@ -482,11 +476,12 @@ img {
 
 .talk {
   background: #FAFBFD;
+  padding: 0px 0px 93px 0px;
 }
 
 .talk-block {
   position: relative;
-  min-height: 700px;
+  height: auto;
 }
 
 .talk-figure1, .talk-figure2, .talk-figure3 {
@@ -652,7 +647,6 @@ img {
 .advantage-wrapper {
   position: relative;
   padding: 80px 0px 0px 0px;
-  min-height: 569px;
 }
 
 .advantage-figure1, .advantage-figure2, .advantage-figure3, .advantage-figure4 {
@@ -763,7 +757,6 @@ img {
 
 .advantage-column {
   width: 278.17px;
-  height: 276.52px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
           box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
@@ -809,7 +802,7 @@ img {
 
 .advantage-subparagraf {
   max-width: 227.27px;
-  margin: 0 auto;
+  margin: 0 auto 45px auto;
   font-weight: normal;
   font-size: 12px;
   letter-spacing: 0.08em;
@@ -831,7 +824,13 @@ img {
 }
 
 .footer {
-  min-height: 131px;
+  padding: 75px 0px 47px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 25px 0px 40px 0px;
+  }
 }
 
 .footer-wrapper {
@@ -847,7 +846,13 @@ img {
 }
 
 .footer-img {
-  margin-top: 23px;
+  margin-top: 335px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-img {
+    margin-top: 0px;
+  }
 }
 
 .footer-img:not(:last-child) {

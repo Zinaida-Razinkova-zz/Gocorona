@@ -1,7 +1,6 @@
 .advantage-wrapper{
     position: relative;
     padding: 80px 0px 0px 0px;
-    min-height: 569px;
 }
 
 .advantage-figure1, .advantage-figure2, .advantage-figure3, .advantage-figure4{
@@ -91,7 +90,6 @@
 
 .advantage-column {
     width: 278.17px;
-    height: 276.52px;
     background: $color_white;
     box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
     border-radius: 8px;
@@ -132,7 +130,7 @@
 
 .advantage-subparagraf{
     max-width: 227.27px;
-    margin: 0 auto;
+    margin: 0 auto 45px auto;
     font-weight: normal;
     font-size: 12px;
     letter-spacing: 0.08em;
