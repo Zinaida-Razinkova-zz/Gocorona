@@ -24,6 +24,7 @@ body {
 
 body .container {
   margin: 0px auto;
+  width: 100%;
   max-width: 1152px;
   padding: 0px 52px 0 52px;
 }
@@ -47,10 +48,11 @@ img {
 }
 
 .button {
-  width: 144px;
-  height: 40px;
+  min-width: 144px;
+  min-height: 40px;
+  padding: 14px 29px;
+  border: 1px solid transparent;
   border-radius: 5px;
-  border: none;
   background: #EC5863;
 }
 
@@ -69,8 +71,8 @@ img {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #FCFDFE;
+  text-align: center;
   margin: 0px;
-  padding: 0px;
 }
 
 .title {
@@ -207,6 +209,7 @@ img {
 .header-button {
   margin-left: 50px;
   background: #4285F4;
+  padding: 12px 30px;
 }
 
 .header-button:hover, .header-button:focus {
@@ -216,8 +219,8 @@ img {
 
 @media screen and (min-width: 1152px) {
   .header-button {
-    width: 130px;
-    height: 40px;
+    min-width: 130px;
+    min-height: 40px;
     background: #4285F4;
     margin-left: 150px;
   }
@@ -279,10 +282,6 @@ img {
 .hero-subtitle {
   max-width: 375px;
   margin: 0px 0px 27px 0px;
-}
-
-.hero-button {
-  margin-top: 0px;
 }
 
 .hero-button:hover, .hero-button:focus {
@@ -361,10 +360,6 @@ img {
     max-width: 327px;
     max-height: 230px;
   }
-}
-
-.safe {
-  padding: 0px 0px 0px 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -646,7 +641,7 @@ img {
 
 .advantage-wrapper {
   position: relative;
-  padding: 80px 0px 0px 0px;
+  padding: 8px 0px 0px 0px;
 }
 
 .advantage-figure1, .advantage-figure2, .advantage-figure3, .advantage-figure4 {
@@ -824,7 +819,7 @@ img {
 }
 
 .footer {
-  padding: 75px 0px 47px 0px;
+  padding: 0px 0px 47px 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -846,7 +841,7 @@ img {
 }
 
 .footer-img {
-  margin-top: 335px;
+  margin-top: 412px;
 }
 
 @media screen and (max-width: 768px) {
@@ -857,6 +852,6 @@ img {
 
 .footer-img:not(:last-child) {
   margin-right: 56px;
-  margin-left: 9px;
+  margin-left: 9.5px;
 }
 /*# sourceMappingURL=main.css.map */

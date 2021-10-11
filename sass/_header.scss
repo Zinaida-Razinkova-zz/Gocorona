@@ -89,6 +89,7 @@
 .header-button {
     margin-left: 50px;
     background: $color_accent2;
+    padding: 12px 30px;
     &:hover,
     &:focus {
       color: $color_accent2;
@@ -96,8 +97,8 @@
 }
     
 @media screen and (min-width: $desktop1152) {
-    width: 130px;
-    height: 40px;
+    min-width: 130px;
+    min-height: 40px;
     background: $color_accent2;
     margin-left: 150px;
 
