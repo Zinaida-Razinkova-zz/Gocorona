@@ -756,20 +756,32 @@ img {
   -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
           box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
   border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 36.88px 0px;
 }
 
 @media screen and (max-width: 768px) {
   .advantage-column {
     padding: 40px;
     margin-bottom: 30px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1152px) {
-  .advantage-column {
+  .advantage-column:not(:last-child) {
     margin-right: 73px;
   }
 }
@@ -797,7 +809,7 @@ img {
 
 .advantage-subparagraf {
   max-width: 227.27px;
-  margin: 0 auto 45px auto;
+  margin: 0px;
   font-weight: normal;
   font-size: 12px;
   letter-spacing: 0.08em;
@@ -808,13 +820,9 @@ img {
   max-width: 242.53px;
 }
 
-.advantage-img {
-  margin: 0px auto 0px auto;
-}
-
 @media screen and (min-width: 1152px) {
   .advantage-img {
-    margin: 37px auto 58px auto;
+    margin-bottom: 59px;
   }
 }
 
