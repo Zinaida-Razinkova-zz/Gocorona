@@ -1,11 +1,15 @@
 .talk {
     background: $color_light;
-    padding: 0px 0px 93px 0px;
+    padding: 10px 0px 10px 0px;
+    @media screen and (min-width: 1024px) {
+        padding: 53px 0px 93px 0px;
+        }
 }
+
 
 .talk-block{
     position: relative;
-    height: auto;
+    margin-top: 51px;
 }
 
 .talk-figure1, .talk-figure2, .talk-figure3{
@@ -13,69 +17,61 @@
     position: absolute;
     z-index: 0;
     background: $color_accent;
+    @media screen and (max-width: 1151px) {
+        display: none;
+        }
 }
 
 .talk-figure1 {
     max-width: 65.75px;
     min-height: 65.75px;
     left: 178px;
-    top: 174px;
+    top: 71px;
     border-radius: 16px;
     transform: rotate(-30deg);
-    @media screen and (max-width: $mobile768) {
-        left: 7px;
-        }
-
 }
+
 .talk-figure2 {
-   max-width: 96.96px;
-   min-height: 96.96px;
-   left: 416px;
-   top: 62px;
-   border-radius: 30px;
-   transform: rotate(105deg);
-   @media screen and (max-width: $mobile768) {
-    left: 243px;
-    }
+    max-width: 96.96px;
+    min-height: 96.96px;
+    left: 416px;
+    top: -40px;
+    border-radius: 30px;
+    transform: rotate(105deg);
 }
 
 .talk-figure3 {
-   max-width: 127.47px;
-   min-height: 127.47px;
-   left: 776px;
-   top: 102px;
-   border-radius: 30px;
-   transform: rotate(-30deg);
-   @media screen and (max-width: $mobile768) {
-    left: 577px;
-    }
+    max-width: 127.47px;
+    min-height: 127.47px;
+    left: 776px;
+    top: -1px;
+    border-radius: 30px;
+    transform: rotate(-30deg);
 }
 
 .talk-row {
-    position: absolute;
-    width: 100%;
+    position: relative;
     max-width: 654px;
     min-height: 117px;
-    left: 197px;
-    top: 102px;
+    margin: 0px auto;
     z-index: 1;
     background: $color_white;
     box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
     border-radius: 16px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    @media screen and (max-width: $mobile768) {
-        left: 49px;
-        }
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
 }
+
 .talk-column {
     text-align: center;
 }
 
 .talk-column__paragraf, .talk-column__subparagraf{
-    font-family: Rubik;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
 }
@@ -87,6 +83,9 @@
     color: $color_accent;
 
     margin: 0px 0px 8px 0px;
+    @media screen and (max-width: 425px) {
+        font-size: 20px;
+        }
 }
 
 .talk-column__subparagraf {
@@ -97,23 +96,28 @@
     color: $color_black;
 
     margin: 0px;
+    @media screen and (max-width: 425px) {
+        font-size: 8px;
+        }
 }
 
 .talk-wrapper {
-    padding-top: 285px;
-    @media screen and (max-width: $mobile768) {
+    @media screen and (max-width: 1023px) {
         text-align: center;
         }
-    @media screen and (min-width: $desktop1152) {
+    @media screen and (min-width: 1024px) {
         display: flex;
         }
 }
+
 .talk-content {
-    @media screen and (min-width: $desktop1152) {
-        margin: 66px 0px 0px 39px;
+    margin: 30px 0px 0px 0px;
+    @media screen and (min-width: 1024px) {
+        margin: 131px 0px 0px 39px;
         }
     
 }
+
 .talk-title {
     max-width: 393px;
     margin: 0px auto 11px auto;
@@ -132,7 +136,10 @@
 .talk-video {
     width: 100%;
     max-width: 560px;
-    @media screen and (min-width: $desktop1152) {
-        margin-left: 87px;
+    margin: 30px 0px 0px 0px;
+    @media screen and (min-width: 1024px) {
+        margin: 65px 0px 0px 86px;
         }
+
+
 }

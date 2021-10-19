@@ -1,14 +1,11 @@
-::before
-::after {
-  margin:0px;
-  padding: 0px;
-  border:0px;
+html {
   box-sizing: border-box;
 }
 
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
@@ -16,16 +13,29 @@ a {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  font-family: $font_basic;
   .container {
     margin: 0px auto;
     width: 100%;
-    max-width: 1152px;
-    padding: 0px 52px 0 52px;
-    @media screen and (max-width: $mobile768) {
-      max-width:768px;
-      padding: 0px 25px 0px 25px;
+    @media screen and (min-width: $desktop1152 +1px) {
+      max-width: $desktop1152;
+      padding: 0px 53px 0px 53px;
+    }
+    @media screen and (max-width: $desktop1152) {
+      max-width: $desktop1152;
+      padding: 0px 53px 0px 53px;
+    }
+    @media screen and (max-width: $desktop1024) {
+      max-width: $desktop1024;
+      padding: 0px 45px 0px 45px;
+    }
+    @media screen and (max-width: $tablet768) {
+      max-width: $tablet768;
+      padding: 0px 35px 0px 35px;
+    }
+    @media screen and (max-width: $mobile475) {
+      max-width: $mobile475;
+      padding: 0px 20px 0px 20px;
     }
   }
 }
@@ -71,7 +81,7 @@ background: $color_accent;
 }
 
 .title{
-font-family: Rubik;
+font-family: inherit;
 font-style: normal;
 font-weight: bold;
 font-size: 44px;
@@ -79,13 +89,13 @@ line-height: 1.26;
 color: $color_black;
 
 margin: 0px;
-@media screen and (max-width: $mobile768) {
+@media screen and (max-width: $tablet768) {
   font-size: 36px;
   }
 }
 
 .subtitle{
-font-family: Rubik;
+font-family: inherit;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;

@@ -1,6 +1,9 @@
-.advantage-wrapper{
+.advantage{
     position: relative;
-    padding: 81px 0px 0px 0px;
+    padding: 40px 0px 40px 0px;
+    @media screen and (min-width: 1024px) {
+            padding: 81px 0px 75px 0px;
+        }
 }
 
 .advantage-figure1, .advantage-figure2, .advantage-figure3, .advantage-figure4{
@@ -8,54 +11,45 @@
     position: absolute;
     z-index: 0;
     background: $color_accent;
+    @media screen and (max-width: 1151px) {
+        display: none;
+        }
 }
 
 .advantage-figure1 {
     max-width: 65.75px;
     min-height: 65.75px;
-    left: 17px;
-    top: 490px;
+    left: 15px;
+    top: 245px;
     border-radius: 16px;
     transform: rotate(-30deg);
-    @media screen and (max-width: $mobile768) {
-        display: none;
-        }
 }
 
 .advantage-figure2 {
     max-width: 96.96px;
     min-height: 96.96px;
     left: 267px;
-    top: 288px;
+    top: 43px;
     border-radius: 30px;
     transform: rotate(105deg);
-    @media screen and (max-width: $mobile768) {
-        display: none;
-        }
 }
 
 .advantage-figure3 {
     max-width: 127.47px;
     min-height: 127.47px;
-    left: 615px;
-    top: 418px;
+    left: 614px;
+    top: 171px;
     border-radius: 30px;
     transform: rotate(-30deg);
-    @media screen and (max-width: $mobile768) {
-        display: none;
-        }
 }
 
 .advantage-figure4 {
     max-width: 65.75px;
     min-height: 65.75px;
-    left: 968px;
-    top: 212px;
+    left: 965px;
+    top: -35px;
     border-radius: 16px;
     transform: rotate(-30deg);
-    @media screen and (max-width: $mobile768) {
-        display: none;
-        }
 }
 
 .advantage-title, .advantage-subtitle{
@@ -64,9 +58,7 @@
 .advantage-subtitle{
     max-width: 600.9px;
     margin: 0px auto;
-    @media screen and (max-width: $mobile768) {
-        margin: 0px auto 30px auto;
-        }
+
 }
 
 .advantage-title {
@@ -77,77 +69,80 @@
     color: $color_accent;
 }
 
+.advantage-decor{
+    position: relative;
+}
 
 .advantage-row {
-    @media screen and (min-width: $desktop1152) {
-    display: flex;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    left: 34px; 
-    margin-top: 64px;
-    }
+    margin-top: 30px;
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 64px;
+        }
 }
 
 .advantage-column {
     width: 278.17px;
+    padding: 37px 18px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
     background: $color_white;
     box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
     border-radius: 8px;
-
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    align-items: center;
-
-    padding: 36.88px 0px;
-    @media screen and (max-width: $mobile768) {
-            padding: 40px;
-            margin-bottom: 30px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-   
-        
-    @media screen and (min-width: $desktop1152) {
+    
+    @media screen and (max-width: 768px) {
         &:not(:last-child){
-            margin-right: 73px;
+            margin-bottom: 20px;
             }
         }
-}
+
+    @media screen and (min-width: 1024px) {
+        &:not(:last-child){
+            margin-right: 72px;
+            }
+        }
+
+    }
 
 .advantage-paragraf, .advantage-subparagraf{
-    font-family: Rubik;
+    font-family: inherit;
     font-style: normal;
     line-height: 1.385;
     letter-spacing: 0.08em;
-    text-align: center;
 }
 
 .advantage-paragraf{
     font-size: 16px;
     font-weight: bold;
     color: $color_black;
-    margin: 0px 0px 7px 0px;
-    @media screen and (max-width: $mobile768) {
-        margin: 30px 0px 15px 0px;
-        }
+
+    margin: 0px 0px 7px 0px;  
     
+}
+
+.advantage-subparagraf, .advantage-subparagraf--width{
+    margin: 0px auto 0px auto;
 }
 
 .advantage-subparagraf{
     max-width: 227.27px;
-    margin: 0px;
     font-weight: normal;
     font-size: 12px;
     letter-spacing: 0.08em;
     color: $color_average;
 }
 .advantage-subparagraf--width{
-max-width: 242.53px;
+    max-width: 239px;
 }
 
 .advantage-img {
-    @media screen and (min-width: $desktop1152) {
-        margin-bottom: 59px;
-        }
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 59px;
 }

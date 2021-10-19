@@ -1,20 +1,13 @@
 .footer {
-    @media screen and (max-width: $mobile768) {
-        padding: 25px 0px 40px 0px;
-        }
-        padding: 0px 0px 47px 0px;
-
+    padding: 0px 0px 41px 0px;
 }
+
 .footer-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .footer-img {
-    @media screen and (max-width: $mobile768) {
-        margin-top: 0px;
-        }
-    margin-top: 410px;
     &:not(:last-child){
         margin-right: 56px;
         margin-left: 9.5px;

@@ -1,20 +1,43 @@
 .safe {
-    @media screen and (max-width: $mobile768) {
-        padding-bottom: 30px;
+    padding: 0px 0px 30px 0px ;
+    @media screen and (min-width: 1152px) {
+        padding: 0px 0px 66px 0px ;
         }
+
+
+}
+.safe-wrapper{
+
+@media screen and (min-width: 1024px) {
+    display: flex;
+    }
 }
 
-.safe-wrapper{
+.safe-decor{
     position: relative;
-    display: flex;
-    height: auto;
 }
+
+.safe-img {
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1024px) {
+        margin-top: 106px;
+        margin-left: 87px;
+        }
+    
+}
+
 
 .safe-figure1, .safe-figure2, .safe-figure3{
     width: 100%;
     position: absolute;
     z-index: 0;
     background: $color_accent;
+    @media screen and (max-width: 1151px) {
+        display: none;
+        }
 }
 
 .safe-figure1 {
@@ -23,9 +46,7 @@
     left: 48px;
     top: 78px;
     border-radius: 30px;
-    @media screen and (max-width: $mobile768) {
-        left: 25%;
-        }
+
 }
 
 .safe-figure2 {
@@ -33,10 +54,8 @@
     min-height: 77px;
     left: 309px;
     top: 436px;
-    border-radius: 30px;
-    @media screen and (max-width: $mobile768) {
-        left: 60%;
-        }
+
+
 }
 
 .safe-figure3 {
@@ -45,38 +64,28 @@
     left: 80px;
     top: 543px;
     border-radius: 30px;
-    @media screen and (max-width: $mobile768) {
-        left: 30%;
-        }
-}
 
-.safe-img {
-    position: absolute;
-    width: 100%;
-    max-width: 295px;
-    min-height: 525px;
-    left: 88px;
-    top: 105px;
-    z-index: 1;
-    @media screen and (max-width: $mobile768) {
-        left: 30%;
-        }
 }
-
 .safe-content {
-    @media screen and (max-width: $mobile768) {
-        display: block;
-        text-align: center;
-        margin: 650px auto 0px auto;
+    @media screen and (max-width: 1023px) {
+         text-align: center;
         }
-    @media screen and (min-width: $desktop1152) {
-        margin: 231px 0px 231px 535px;
+        @media screen and (min-width: 1024px) {
+            margin: 131px 0px 0px 52px;
+            }
+    @media screen and (min-width: 1152px) {
+        margin: 231px 0px 0px 152px;
         }
+    
 }
 
 .safe-title {
     max-width: 379px;
-    margin: 0px 0px 11px 0px
+    margin: 0px 0px 11px 0px;
+    @media screen and (max-width: 1023px) {
+        margin-right: auto;
+        margin-left: auto;
+        }
 }
 
 .safe-accent{
@@ -85,5 +94,9 @@
 
 .safe-subtitle{
     max-width: 363px;
-    margin: 0px 0px 28px 0px 
+    margin: 0px 0px 28px 0px ;
+    @media screen and (max-width: 1023px) {
+        margin-right: auto;
+        margin-left: auto;
+        }
 }
